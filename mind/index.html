@@ -14,6 +14,8 @@
 	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700,500,900' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="css/demo.css" />
 	<link rel="stylesheet" type="text/css" href="css/style1.css" />
+<script src="https://code.jquery.com/jquery-3.0.0.min.js"></script> 
+<script src="https://cdn.jsdelivr.net/jquery.typeit/4.3.0/typeit.min.js"></script>
 	<!--[if IE]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
@@ -36,9 +38,15 @@
 		<div class="slideshow">
 			<canvas width="1" height="1" id="container" style="position:absolute"></canvas>
 			<!-- Heavy Rain -->
-			<div class="slide" id="slide-1" data-weather="rain" style="color:#FFFFFF">
-				<div class="slide__element slide__element--date">Sunday, 22<sup>nd</sup> of January 2017</div>
-				<div class="slide__element slide__element--temp">19°<small>C</small></div>
+			<div class="slide" id="slide-1" data-weather="rain">
+				<p id="tymind" class="slide__element slide__element--mind"></p>
+				<script>
+				$('#tymind').typeIt({
+     strings: ["为我爱的人和爱我的人奋斗着", "尽管这条路是孤独的", "我也不会放弃"],
+     speed: 150,
+     autoStart: false
+});
+				</script>
 			</div>
 		</div>
 		<p class="nosupport">Sorry, but your browser does not support WebGL!</p>

@@ -147,9 +147,9 @@
 }
 
 .slide__element--mind {
-	font-size: 4em;
-	font-weight: 700;
-	margin: 0 0 2.5em;
+	font-size: 3em;
+	font-weight: 600;
+	margin: 0 0 2em;
 }
 
 @media screen and (max-height: 39em) {
